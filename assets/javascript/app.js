@@ -50,7 +50,7 @@ $(document).ready(function () {
     var noguess = 0;
     var timer = 20;
     var intervalId;
-    var userGuess = "";
+    var Guessmade = "";
     var running = false;
     var qCount = questionAsked.length;
     var pick;
@@ -63,13 +63,13 @@ $(document).ready(function () {
     $("#start").on("click", function () {
         $("#start").hide();
         displayQuestion();
-        runTimer();
+        timerRun();
         for (var i = 0; i < questionAsked.length; i++) {
             holder.push(questionAsked[i]);
         }
     })
     //timer goes down by 1 second every second.
-    function runTimer() {
+    function timerRun() {
         if (!running) {
             intervalId = setInterval(decrement, 1000);
             running = true;
@@ -85,7 +85,7 @@ $(document).ready(function () {
             noguess++;
             stop();
             $("#correctAnswer").html("<p>Time is up! The correct answer is: " + pick.choice[pick.answer] + "</p>");
-            hidepicture();
+            dissappear();
         }
     }
     // stops game
@@ -112,31 +112,28 @@ $(document).ready(function () {
 
 
 
-        //click function to select answer and outcomes
         $(".answerchoice").on("click", function () {
-            //grab array position from userGuess
-            userGuess = parseInt($(this).attr("data-guessvalue"));
+            Guessmade = parseInt($(this).attr("data-guessvalue"));
 
-            //correct guess or wrong guess outcomes
-            if (userGuess === pick.answer) {
+            if (Guessmade === pick.answer) {
                 stop();
                 correct++;
-                userGuess = "";
+                Guessmade = "";
                 $("#correctAnswer").html("<p>Correct!</p>");
-                hidepicture();
+                dissappear();
 
             } else {
                 stop();
                 incorrect++;
-                userGuess = "";
+                Guessmade = "";
                 $("#correctAnswer").html("<p>Wrong! The correct answer is: " + pick.choice[pick.answer] + "</p>");
-                hidepicture();
+                dissappear();
             }
         })
     }
 
 
-    function hidepicture() {
+    function dissappear() {
         $("#correctAnswer").append("<img src=" + pick.photo + ">");
         newArray.push(pick);
         questionAsked.splice(index, 1);
@@ -158,7 +155,7 @@ $(document).ready(function () {
                 noguess = 0;
 
             } else {
-                runTimer();
+                timerRun();
                 displayQuestion();
 
             }
@@ -174,7 +171,7 @@ $(document).ready(function () {
         for (var i = 0; i < holder.length; i++) {
             questionAsked.push(holder[i]);
         }
-        runTimer();
+        timerRun();
         displayQuestion();
 
     })
