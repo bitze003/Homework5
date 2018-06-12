@@ -1,0 +1,150 @@
+header {
+    color: blue;
+    clear: both;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 100%;
+    Height: .75in;
+    background-color: burlywood;
+}
+
+section {
+    width: 7in;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{width:300px;
+    height:300px;
+
+}
+
+p {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: black;
+    line-height: 25px;
+    padding-left: 30px;
+    padding-top: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+
+/* span {
+    height: 400 px;
+    width: 800px;
+    margin: 20px;
+}
+
+#randomwinloss {
+    height: 200px;
+    width: 200px;
+}
+
+#wins {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#losses {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#randomnumberbox {
+    height: 200px;
+    width: 267px;
+    margin: 120px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+#randomnumber {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: white;
+    font-size: 25px;
+} */
+
+#banner {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 120px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 25px;
+    color: rgb(58, 15, 175);
+}
+
+#start{    height: 50px;
+    width: 267px;
+    margin: 120px;
+    color: white;
+    background-color: black;
+    font-size: 40px;
+    
+}
+#question{
+    font-size:40px;
+    font-weight: bold;
+    color:rgba(47, 175, 143, 0.637);
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+#correctAnswer{
+    font-size:30px;
+    color:white;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+#questions{
+    font-size:30px;
+    color:black;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#timeleft{
+    font-size:30px;
+    color:rgb(114, 7, 7);
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#reset{
+    font-size:24px;
+    color:rgb(94, 38, 199);
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: bold;   
+}
+/* #yourscore {
+    width: 45px;
+    height: 25px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 120px;
+    font-weight: bold;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    border-bottom-style: dotted;
+    border-width: 5px;
+    font-size: 30px;
+} */
